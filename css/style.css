@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #3F220F;
+    color: gray;
+    font-family: "Zilla Slab", serif;
+}
+
+.topbar {
+    background-color: #19180A;
+    padding: 10px;
+}
+.info {
+    text-align: center;
+    font-size: 16px;
+}
+
+nav {
+    background-color: #19180A;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+.navLinks {
+    list-style: none;
+    display: flex;
+}
+.navLinks li {
+    margin-left: 20px;
+}
+.navLinks a {
+    color: gray;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navLinks a.active {
+    color: #772017
+}
+.navLinks a:hover {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.backgroundImage {
+    background-image: url(/images/downBar.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid black;
+}
+.logoBg {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    Introduction Section
+
+*/
+
+.introContainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+}
+.introText {
+    color: grey;
+    line-height: 2.0;
+    padding-top: 10px;
+    margin-right: 40px;
+}
+.header {
+    color: white;
+    font-size: 40px;
+}
+.highlight {
+    color:#772017;
+}
+.introText p {
+    font-size: 30px;
+    max-width: 800px;
+}
+.dessert img {
+    height: 600px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+.dessert p {
+    text-align: right;
+}
+
+/*
+    Dessert Show Case
+*/
+
+
+.showcaseSection {
+    display: flex;
+    justify-content: center;
+    background-color: #AF4319;
+    border: 3px solid black;
+    height: 750px;
+    margin-bottom: 40px;
+}
+
+.table {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.table th, .table td {
+    padding: 15px;
+}
+
+.table img {
+    height: 400px;
+}
+.table th {
+    font-size: 50px;
+    color: white;
+}
+
+.dealDescription h1 {
+    font-size: 40px;
+    color: white;
+}
+.dealDescription p {
+    font-size: 25px;
+    color: white;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+/*
+    Specialty Dish section
+*/
+
+.specialty {
+    display: flex;
+    margin: 50px auto;
+    max-width: auto;
+    height: 750px;
+    justify-content: center;
+}
+
+.specialtyDish img {
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+figcaption {
+    color: gray;
+    max-width: 800px;
+    line-height: 2.0;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+
+
+/*
+    Footer Section
+*/
+
+footer {
+    background-color: #19180A;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 3px solid black;
+}
+footer img {
+    height: 200px;
+    margin-right: 200px;
+}
+
+footer h3 {
+    margin-right: 200px;
+}
+
+footer li {
+    list-style: none;
+}
+
+
