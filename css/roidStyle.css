@@ -39,6 +39,7 @@ body {
     height: 200px;
     position: relative;
     margin: 2em;
+    border-radius: 20px;
 }
 
 .btnLink {
@@ -135,6 +136,22 @@ input[type="reset"]:hover {
     background-color: black;
     color: white;
 }
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: #111111;
+    padding: 2em 0;
+    border-radius: 20px; 
+}
+.footer img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+
 
 /*
 Medium Form Factor
