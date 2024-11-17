@@ -30,28 +30,103 @@
             </a>
     
             <nav>
-                <button class="btnLink">Home</button>
+                <button class="btnLink" aria-current="page">Home</button>
                 <button class="btnLink">Place Holder</button>
                 <button class="btnLink">About Me</button>
             </nav>
         </header>
-    </div>
     
-    <div class="main">
-
-    </div>
-
-    <div class="contact">
-
-    </div>
     
+        <section class="main">
+            <div class="slogan">
+                <h1>Who's Gonna Carry the Boats.. and the Logs?! <br>-
+                    <span>David Goggins</span>
+                </h1>
+            </div>
+               
+            <div class="about">
+                <h2>
+                    About <span>Trentastic:</span>
+                </h2>
+                <p>
+                    Trentastic: Your ultimate guide to "natural" gains and "effortless" transformations. Unlock the secrets
+                    of peak performance with our foolproof methods, cutting-edge "nutrition tips," and totally-not-
+                    suspicious training routines that will have you questioning how it's all just... hard work. Because here
+                    at Trentastic, the only thing enhanced is your potential.*
+                </p>
+
+                <p>
+                    The platform offers tailored workout plans, nutritional guidance, and progress tracking tools. With a
+                    focus on personalized coaching, Trentastic provides virtual sessions, goal-setting resources, and a
+                    blog filled with expert tips to inspire a healthy lifestyle. The website features an intuitive design,
+                    making it easy for users to connect with trainers, book sessions, and stay motivated on their fitness
+                    journey.
+                </p>
+            </div>
+
+            <figure>
+                <img src="/images/creepyTogiPicture.jpg" alt="Steroid Abusing Influencer">
+                <figcaption>
+                    One of our beloved <span>natural</span> personal trainers!
+                </figcaption>
+            </figure>
+
+        </section> 
+
+        <section class="contact">
+            <div class="contactTrainer">
+                <h1>
+                    Contact Any of Our Amazing <span>Trainers!</span>
+                </h1>
+            </div>
+
+
+            <div class="formContainer">
+                <form id="contactInfo" method="post" action="mailto:ydela415@mtroyal.ca">
+                    <fieldset>
+                        <legend>Contact:</legend>
+    
+                        <label for="firstName">First Name: </label>
+                        <input type="text" size="30" maxlength="35" id="firstName" name="firstName" autofocus required>
+    
+    
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" size="30" maxlength="35" id="lastName" name="lastName" required>
+    
+                        <label for="phoneNumber">Phone Number: </label>
+                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phoneNumber" name="phoneNumber"
+                            placeholder="123-456-7890" required>
+    
+                        <label for="email">Email: </label>
+                        <input type="email" pattern="[a-z0-9._%+\-]+@mtroyal\.ca$" id="email" name="email"
+                            placeholder="abc@mtroyal.ca" required>
+    
+    
+                        <label for="subject">Subject: </label>
+                        <input type="text" id="subject" name="subject" size="50" maxlength="75" required>
+    
+                        <label for="body">Body: </label>
+                        <textarea id="body" name="body" cols="50" rows="6" required></textarea>
+    
+                    </fieldset>
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Reset Form">
+    
+                </form>
+    
+            </div>
+
+        </section>
 
 
 
-    <footer class="footer">
 
+        <footer class="footer">
+            
 
-    </footer>
+        </footer>
+
+    </div>
 </body>
 
 
