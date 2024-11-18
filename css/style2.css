@@ -1,138 +1,173 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: #3F220F;
-    color: gray;
-    font-family: "Zilla Slab", serif;
+    background: url(/images/seamless-dumbbell-pattern-isolated-on-background-vector-23266695.jpg);
+    font-family: "Funnel Display", 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
-.topbar {
-    background-color: #19180A;
-    padding: 10px;
-}
-.info {
-    text-align: center;
-    font-size: 16px;
+.pageContainer {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    max-width: 65%;
 }
 
-nav {
-    background-color: #19180A;
-    padding: 10px;
+.headerBar {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    border-bottom: 3px solid black;
+    background-color: #111111;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 50px;
 }
-.navLinks {
-    list-style: none;
-    display: flex;
+
+.logo {
+    height: 200px;
+    position: relative;
+    margin: 2em;
+    border-radius: 20px;
 }
-.navLinks li {
-    margin-left: 20px;
-}
-.navLinks a {
-    color: gray;
-    font-size: 25px;
+
+.headerBar a {
     text-decoration: none;
-    padding: 10px 15px;
 }
-.navLinks a.active {
-    color: #772017
-}
-.navLinks a:hover {
-    background-color: red;
+.btnLink {
+    font-size: 2rem;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    background-color: black;
+    color: white;
+    border: 5px solid #999999;
     border-radius: 10px;
 }
 
-.backgroundImage {
-    background-image: url(/images/downBar.jpg);
-    background-size: cover;
-    background-position: center;
-    border-bottom: 3px solid black;
+.btnLink:hover {
+    cursor: pointer;
+    background-color: #999999;
+    color: black;
 }
-.logoBg {
-    height: 800px;
+
+.btnLink[aria-current="page"] {
+    background-color: #314048;
+}
+
+.btnLink[aria-current="page"]:hover {
+    background-color: #999999;
+    color: black;
+}
+
+span {
+    color: #56666F;
+}
+
+.main {
+    background-color: #111111;
+    border-radius: 20px;
+    grid-area: main;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.menu {
+.trainers {
     display: flex;
-    height: 1000px;
-    gap: 20px;
-    text-align: center;
-    color: white;
-    padding: 40px
+    gap: 30px;
+    margin: 1.5em 0;
 }
 
-.foodMenu {
-    flex: 0 0 35%;    
-}
-.drinkMenu {
-    flex: 0 0 30%;
-}
-.menuItem {
-    margin: 100px 0;
+.trainers img {
+    width: 40%;
+    border-radius: 20px;
 }
 
-.description {
-    width: 200px;
-    display: inline-block;
-    margin-right: 20px;
-}
-.description h3 {
-    text-align: left;
-    font-size: 25px;
-    color: #772017
-}
-.description p {
+.trainers p {
+    max-width: 50%;
     line-height: 2;
-    font-size: 20px;
-    text-align: left;
-}
-.menuItem img {
-    height: 200px;
-    border-radius: 40px;
+    font-size: 1.5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: #19180A;
+.footer {
+    grid-area: footer;
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    border-top: 3px solid black;
-}
-footer img {
-    height: 200px;
-    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111111;
+    padding: 2em 0;
+    border-radius: 20px; 
 }
 
-footer h3 {
-    margin-right: 200px;
+.footer img {
+    height: 100px;
+    border-radius: 20px;
 }
 
-footer li {
-    list-style: none;
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:790px) {
+    .headerBar img {
+        height: 150px;
+    }
+    
+    .headerBar {
+        justify-content: space-evenly;
+    }
+
+    .btnLink {
+        font-size: 1.5em;
+        margin: 0 20px;
+    }
+
+    .pageContainer {
+        max-width: 90%;
+    }
+
+    .trainers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainers p {
+        max-width: fit-content;
+    }
+
+    .footer {
+        font-size: .75em;
+    }
+
+    
+}
+
+@media screen and (max-width:570px) {
+    .headerBar img, .footer img {
+        display: none;
+    }
+
+    .btnLink {
+        font-size: .75em;
+        margin-top: 20px;
+    }
+
+    .trainers {
+        font-size: .5em;
+    }
+
+    .footer {
+        font-size: .5em;
+    }
+
+
 }
