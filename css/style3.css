@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/seamless-dumbbell-pattern-isolated-on-background-vector-23266695.jpg);
+    font-family: "Funnel Display", 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pageContainer {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "information"
+    "influencerLinks"
+    "footer";
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    max-width: 65%;
+}
+
+.headerBar {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 50px;
+}
+
+.headerBar a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 200px;
+    position: relative;
+    margin: 2em;
+    border-radius: 20px;
+}
+
+.btnLink {
+    font-size: 2rem;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    background-color: black;
+    color: white;
+    border: 5px solid #999999;
+    border-radius: 10px;
+}
+
+.btnLink:hover {
+    cursor: pointer;
+    background-color: #999999;
+    color: black;
+}
+
+.btnLink[aria-current="page"] {
+    background-color: #314048;
+}
+
+.btnLink[aria-current="page"]:hover {
+    background-color: #999999;
+    color: black;
+}
+
+span {
+    color: #56666F;
+}
+
+.main {
+    background-color: #111111;
+    border-radius: 20px;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.information {
+    grid-area: information;
+    background-color: #111111;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1.3em 0;
+}
+
+.information h1 {
+    font-size: 3em;
+}
+
+.information p {
+    max-width: 50%;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.influencerLinks {
+    grid-area: influencerLinks;
+    
+}
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111111;
+    padding: 2em 0;
+    border-radius: 20px; 
+}
+
+.footer img {
+    height: 100px;
+    border-radius: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
