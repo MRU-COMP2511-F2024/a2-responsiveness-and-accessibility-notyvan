@@ -177,13 +177,17 @@ input[type="reset"]:hover {
         font-size: 1em;
     }
     .headerBar img {
-        height: 100px;
+        height: 150px;
     }
     .headerBar {
-        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
     .btnLink {
         font-size: 1em;
+    }
+    .footer {
+        font-size: .75em;
     }
 }
 

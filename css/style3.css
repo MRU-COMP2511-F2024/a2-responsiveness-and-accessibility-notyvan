@@ -106,12 +106,45 @@ span {
 
 .influencerLinks {
     grid-area: influencerLinks;
-    
+    background-color: #111111;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 1fr;
+    justify-items: center;
+    padding: 2em;
+    row-gap: 40px;
+}
+/*
+    Saw this cool design for a card
+    https://uiverse.io/Yaseen549/chilly-dragon-64  
+*/
+.socialMedia {
+    width: 50%;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #314048;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
+.linkHeader {
+    grid-column: span 2;
+}
+.socialMedia a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
 
-
-
+.socialMedia a:hover {
+    cursor: pointer;
+}
 
 .footer {
     grid-area: footer;
@@ -131,4 +164,57 @@ span {
 .footer a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width:790px) {
+    .headerBar img {
+        height: 150px
+    }
+    
+    .headerBar {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .btnLink {
+        font-size: 1em;
+
+    }
+
+    .pageContainer {
+        max-width: 90%;
+    }
+
+    .information {
+        font-size: .75em;
+    }
+
+    .information p {
+        max-width: 75%;
+    }
+}
+
+
+@media screen and (max-width:570px) {
+    .headerBar img, .footer img {
+        display: none;
+    }
+
+    .btnLink {
+        font-size: .75em;
+        margin-top: 20px;
+    }
+
+    .footer {
+        font-size: .5em;
+    }
+
+    .socialMedia {
+        font-size: .5em;
+    }
+
+    .information {
+        font-size: .65em;
+        line-height: 2;
+    }
 }

@@ -125,11 +125,11 @@ span {
     
     .headerBar {
         justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .btnLink {
-        font-size: 1.5em;
-        margin: 0 20px;
+        font-size: 1em;
     }
 
     .pageContainer {
